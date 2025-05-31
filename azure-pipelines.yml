@@ -6,10 +6,10 @@ pool:
 
 steps:
   - script: echo My first Azure Pipeline for Maven project
-    displayName: 'Run a one-line '
+    displayName: 'Run a one-line script '
 
   - script: mvn clean install
-    displayName: 'Build Maven'
+    displayName: 'Build with Maven'
 
   - script: java -jar target/MyMavenApp-1.0-SNAPSHOT.jar
     displayName: 'Run JAR file'
